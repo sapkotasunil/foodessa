@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import { RiShoppingBasketLine, RiUserLine } from "react-icons/ri";
+import { CgMenuLeft } from "react-icons/cg";
 
 const Header = () => {
   const [menuOpened, setmenuOpened] = useState(false);
@@ -26,11 +27,21 @@ const Header = () => {
           <NavBar
             togglrMenu={toggleMenu}
             menuOpend={menuOpened}
-            containerStyles={`hidden xl:flex gap-x-6 xl:gap-x-8 medium-15 rounded-full px-2 py-1`}
+            containerStyles={`${
+              menuOpened
+                ? " flex flex-col gap-y-12 w-[222px] h-screen xl:h-fit  absolute left-0 top-0 bg-white z-50 px-10 py-4 shadow-xl "
+                : "hidden xl:flex gap-x-6 xl:gap-x-8 medium-15 rounded-full px-2 py-1"
+            }`}
           />
         </div>
         {/* right side */}
         <div className="flex-1 flex justify-end items-center gap-x-3 sm:gap-x-10 ">
+          {!menuOpened && (
+            <CgMenuLeft
+              onClick={toggleMenu}
+              className=" text-2xl xl:hidden cursor-pointer"
+            />
+          )}
           <Link to={"/cart"} className="flex relative">
             <RiShoppingBasketLine className="text-2xl" />
             <span className="bg-secondary text-white medium-14 absolute left-3.5 -top-2.5 flexCenter w-4 h-4 rounded-full shadow-inherit">

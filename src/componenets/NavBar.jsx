@@ -1,8 +1,9 @@
 import React from "react";
+import { FaRegWindowClose } from "react-icons/fa";
 import { IoMdListBox } from "react-icons/io";
 import { IoMailOpen } from "react-icons/io5";
 import { TbHomeFilled } from "react-icons/tb";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = ({ containerStyles, togglrMenu, menuOpend }) => {
   const navItems = [
@@ -12,6 +13,19 @@ const NavBar = ({ containerStyles, togglrMenu, menuOpend }) => {
   ];
   return (
     <nav className={containerStyles}>
+      {/* close button inside the nav */}
+      {menuOpend && (
+        <>
+          <FaRegWindowClose
+            onClick={togglrMenu}
+            className=" text-xl  self-end cursor-pointer relative left-8  "
+          />
+          {/* logo */}
+          <Link to={"/"} className=" bold-24 mb-10">
+            <h4 className=" text-secondary ">Foodessa</h4>
+          </Link>
+        </>
+      )}
       {navItems.map(({ to, label, icon }) => (
         <div key={label} className="inline-flex">
           <NavLink

@@ -8,8 +8,8 @@ export default {
         primaryLight: "#e3f7fa",
         secondary: "#217041",
         tertiary: "#404040",
-        deep: "ebf9dc",
-        light: "fffdf4",
+        deep: "#ebf9dc",
+        light: "#fffdf4",
 
         gray: {
           10: "#EEEEEE",
