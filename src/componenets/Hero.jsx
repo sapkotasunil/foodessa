@@ -16,7 +16,7 @@ const Hero = () => {
           <div className=" flex flex-1 flex-col pt-12 xl:pt-32">
             <h1 className=" h1 max-w-[46rem]">
               Grab Exclusive
-              <span className="inline-flex items-center justify-center p-5 h-16 w-16 bg-secondary text-white -rotate-[31deg] rounded-full">
+              <span className="inline-flex items-center justify-center ml-2 p-5 h-16 w-16 bg-secondary text-white -rotate-[31deg] rounded-full">
                 F
               </span>
               ood Discount Now!
