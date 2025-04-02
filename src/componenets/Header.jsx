@@ -20,7 +20,7 @@ const Header = () => {
           >
             F
           </span>
-          ood <span>essa</span>
+          oodessa
         </Link>
         {/* navbar */}
         <div className=" flex-1">
