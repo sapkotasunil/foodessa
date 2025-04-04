@@ -25,7 +25,7 @@ const Header = () => {
         {/* navbar */}
         <div className=" flex-1">
           <NavBar
-            togglrMenu={toggleMenu}
+            toggleMenu={toggleMenu}
             menuOpend={menuOpened}
             containerStyles={`${
               menuOpened

@@ -5,7 +5,7 @@ import { IoMailOpen } from "react-icons/io5";
 import { TbHomeFilled } from "react-icons/tb";
 import { Link, NavLink } from "react-router-dom";
 
-const NavBar = ({ containerStyles, togglrMenu, menuOpend }) => {
+const NavBar = ({ containerStyles, toggleMenu, menuOpend }) => {
   const navItems = [
     { to: "/", label: "Home", icon: <TbHomeFilled /> },
     { to: "/menu", label: "Menu", icon: <IoMdListBox /> },
@@ -17,7 +17,7 @@ const NavBar = ({ containerStyles, togglrMenu, menuOpend }) => {
       {menuOpend && (
         <>
           <FaRegWindowClose
-            onClick={togglrMenu}
+            onClick={toggleMenu}
             className=" text-xl  self-end cursor-pointer relative left-8  "
           />
           {/* logo */}
@@ -33,6 +33,7 @@ const NavBar = ({ containerStyles, togglrMenu, menuOpend }) => {
             className={({ isActive }) =>
               isActive ? "active-link flexCenter gap-x-2" : "flexCenter gap-x-2"
             }
+            onClick={toggleMenu}
           >
             <span className="text-xl">{icon}</span>
             <span className="medium-16">{label}</span>

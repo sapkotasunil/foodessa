@@ -5,6 +5,7 @@ import { ShopContext } from "../context/ShopContext";
 import { categories } from "../assets/data";
 import Title from "../componenets/Title";
 import Item from "../componenets/Item";
+import { Pagination } from "swiper/modules";
 
 const Menu = () => {
   const { foods } = useContext(ShopContext);
@@ -13,6 +14,10 @@ const Menu = () => {
   const [sortType, setSortType] = useState("relevant");
   const [filterdFoods, setFilterdFoods] = useState([]);
   const [ShowCategories, setShowCategories] = useState(true);
+
+  //state for pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   const toggleFilter = (value, setState) => {
     console.log(value);
@@ -37,13 +42,22 @@ const Menu = () => {
   };
 
   const applySorting = (foodList) => {
+    const sortedFoods = [...foodList];
     switch (sortType) {
       case "low":
-        return foodList.sort((a, b) => a.price - b.price);
+        return sortedFoods.sort((a, b) => {
+          const aPrice = Object.values(a.price)[0];
+          const bPrice = Object.values(b.price)[0];
+          return aPrice - bPrice;
+        });
       case "high":
-        return foodList.sort((a, b) => b.price - a.price);
+        return sortedFoods.sort((a, b) => {
+          const aPrice = Object.values(a.price)[0];
+          const bPrice = Object.values(b.price)[0];
+          return bPrice - aPrice;
+        });
       default:
-        return foodList;
+        return sortedFoods;
     }
   };
 
@@ -55,7 +69,19 @@ const Menu = () => {
     let filtered = applyFilter();
     let sorted = applySorting(filtered);
     setFilterdFoods(sorted);
+    setCurrentPage(1);
   }, [category, sortType, foods, search]);
+
+  //get foods for the current page
+  const getPaginatedFoods = () => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return filterdFoods.slice(startIndex, endIndex);
+  };
+
+  //total number of pages
+
+  const totalPages = Math.ceil(filterdFoods.length / itemsPerPage);
 
   return (
     <section className="max-padd-container mt-24">
@@ -130,12 +156,50 @@ const Menu = () => {
         </div>
         {/* foods */}
         <div className="grid grid-cols-1 md;grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20 pl-11">
-          {filterdFoods ? (
-            filterdFoods.map((food) => <Item food={food} key={food._id} />)
+          {getPaginatedFoods().length > 0 ? (
+            getPaginatedFoods().map((food) => (
+              <Item food={food} key={food._id} />
+            ))
           ) : (
             <p className="capitalize"> No foods found for slected filters</p>
           )}
         </div>
+      </div>
+      {/* Pagination */}
+
+      <div className=" flexCenter mt-4 mb-10 sm:gap-4 ">
+        {/* prev button */}
+        <button
+          disabled={currentPage === 1} //disable previous button when curren page is in 1
+          onClick={() => setCurrentPage((prev) => prev - 1)}
+          className={`btn-secondary !py-1 !px-3 ${
+            currentPage === 1 && "opacity-50 cursor-not-allowed"
+          }`}
+        >
+          Previous
+        </button>
+        {/* page number */}
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            onClick={() => setCurrentPage(index + 1)}
+            className={`btn-outline !py-1 !px-3 ${
+              currentPage === index + 1 && "!bg-deep"
+            }`}
+          >
+            {index + 1}
+          </button>
+        ))}
+        {/* Next button */}
+        <button
+          disabled={currentPage === totalPages}
+          onClick={() => setCurrentPage((prev) => prev + 1)}
+          className={`btn-secondary !py-1 !px-3 ${
+            currentPage === totalPages && "opacity-50 cursor-not-allowed"
+          }`}
+        >
+          Next
+        </button>
       </div>
     </section>
   );

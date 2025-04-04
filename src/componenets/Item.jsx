@@ -6,6 +6,7 @@ import { ShopContext } from "../context/ShopContext";
 const Item = ({ food }) => {
   const { currency } = useContext(ShopContext);
   const [size, setSize] = useState(food.sizes[0]);
+
   return (
     <div>
       <div className="flex rounded-xl bg-deep relative">
@@ -45,9 +46,12 @@ const Item = ({ food }) => {
                 })
                 .map((item, i) => (
                   <button
+                    onClick={() => setSize(item)}
                     key={i}
                     className={`${
-                      item === size ? "ring-1 ring-slate-900/10  " : ""
+                      item === size
+                        ? "ring-1 ring-slate-900/10 bg-green-200 text-green-600 "
+                        : ""
                     } h-6 w-6 bg-light text-xs font-semibold rounded-sm `}
                   >
                     {item}
