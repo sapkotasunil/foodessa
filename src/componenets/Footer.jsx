@@ -52,8 +52,8 @@ const Footer = () => {
           </div>
           <p className="mt-3">
             Looking for something delicious? explore a variety of mouthwatering
-            meals, creafted to satisfy your cravings and bring joy to every
-            occasion
+            meals, creafted to satisfy your cravings <br /> and bring joy to
+            every occasion.
           </p>
           <div>
             <div className="relative w-fit mt-3">
