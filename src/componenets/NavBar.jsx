@@ -33,7 +33,6 @@ const NavBar = ({ containerStyles, toggleMenu, menuOpend }) => {
             className={({ isActive }) =>
               isActive ? "active-link flexCenter gap-x-2" : "flexCenter gap-x-2"
             }
-            onClick={toggleMenu}
           >
             <span className="text-xl">{icon}</span>
             <span className="medium-16">{label}</span>

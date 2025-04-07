@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import { RiShoppingBasketLine, RiUserLine } from "react-icons/ri";
 import { CgMenuLeft } from "react-icons/cg";
+import { ShopContext } from "../context/ShopContext";
 
 const Header = () => {
+  const { getCartCount } = useContext(ShopContext);
   const [menuOpened, setmenuOpened] = useState(false);
   const toggleMenu = () => {
     setmenuOpened((prev) => !prev);
@@ -44,8 +46,8 @@ const Header = () => {
           )}
           <Link to={"/cart"} className="flex relative">
             <RiShoppingBasketLine className="text-2xl" />
-            <span className="bg-secondary text-white medium-14 absolute left-3.5 -top-2.5 flexCenter w-4 h-4 rounded-full shadow-inherit">
-              0
+            <span className="bg-secondary text-white medium-14 absolute left-3.5 -top-2.5 flexCenter w-4 h-4 rounded-full shadow-inherit p-[10px]">
+              {getCartCount()}
             </span>
           </Link>
           <div className="group relative">

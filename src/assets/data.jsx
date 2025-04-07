@@ -14,55 +14,54 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 
-
-import food_1 from './food_1.png'
-import food_2 from './food_2.png'
-import food_3 from './food_3.png'
-import food_4 from './food_4.png'
-import food_5 from './food_5.png'
-import food_6 from './food_6.png'
-import food_7 from './food_7.png'
-import food_8 from './food_8.png'
-import food_9 from './food_9.png'
-import food_10 from './food_10.png'
-import food_11 from './food_11.png'
-import food_12 from './food_12.png'
-import food_13 from './food_13.png'
-import food_14 from './food_14.png'
-import food_15 from './food_15.png'
-import food_16 from './food_16.png'
-import food_17 from './food_17.png'
-import food_18 from './food_18.png'
-import food_19 from './food_19.png'
-import food_20 from './food_20.png'
-import food_21 from './food_21.png'
-import food_22 from './food_22.png'
-import food_23 from './food_23.png'
-import food_24 from './food_24.png'
-import food_25 from './food_25.png'
-import food_26 from './food_26.png'
-import food_27 from './food_27.png'
-import food_28 from './food_28.png'
-import food_29 from './food_29.png'
-import food_30 from './food_30.png'
-import food_31 from './food_31.png'
-import food_32 from './food_32.png'
-import food_33 from './food_33.png'
-import food_34 from './food_34.png'
-import food_35 from './food_35.png'
-import food_36 from './food_36.png'
-import food_37 from './food_37.png'
-import food_38 from './food_38.png'
-import food_39 from './food_39.png'
-import food_40 from './food_40.png'
-import food_41 from './food_41.png'
-import food_42 from './food_42.png'
-import food_43 from './food_43.png'
-import food_44 from './food_44.png'
-import food_45 from './food_45.png'
-import food_46 from './food_46.png'
-import food_47 from './food_47.png'
-import food_48 from './food_48.png'
+import food_1 from "./food_1.png";
+import food_2 from "./food_2.png";
+import food_3 from "./food_3.png";
+import food_4 from "./food_4.png";
+import food_5 from "./food_5.png";
+import food_6 from "./food_6.png";
+import food_7 from "./food_7.png";
+import food_8 from "./food_8.png";
+import food_9 from "./food_9.png";
+import food_10 from "./food_10.png";
+import food_11 from "./food_11.png";
+import food_12 from "./food_12.png";
+import food_13 from "./food_13.png";
+import food_14 from "./food_14.png";
+import food_15 from "./food_15.png";
+import food_16 from "./food_16.png";
+import food_17 from "./food_17.png";
+import food_18 from "./food_18.png";
+import food_19 from "./food_19.png";
+import food_20 from "./food_20.png";
+import food_21 from "./food_21.png";
+import food_22 from "./food_22.png";
+import food_23 from "./food_23.png";
+import food_24 from "./food_24.png";
+import food_25 from "./food_25.png";
+import food_26 from "./food_26.png";
+import food_27 from "./food_27.png";
+import food_28 from "./food_28.png";
+import food_29 from "./food_29.png";
+import food_30 from "./food_30.png";
+import food_31 from "./food_31.png";
+import food_32 from "./food_32.png";
+import food_33 from "./food_33.png";
+import food_34 from "./food_34.png";
+import food_35 from "./food_35.png";
+import food_36 from "./food_36.png";
+import food_37 from "./food_37.png";
+import food_38 from "./food_38.png";
+import food_39 from "./food_39.png";
+import food_40 from "./food_40.png";
+import food_41 from "./food_41.png";
+import food_42 from "./food_42.png";
+import food_43 from "./food_43.png";
+import food_44 from "./food_44.png";
+import food_45 from "./food_45.png";
+import food_46 from "./food_46.png";
+import food_47 from "./food_47.png";
+import food_48 from "./food_48.png";
 
 export const categories = [
   {
@@ -91,7 +90,6 @@ export const categories = [
   },
 ];
 
-
 export const foods = [
   // Curry Products
   {
@@ -104,7 +102,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "2",
@@ -116,7 +114,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "3",
@@ -128,7 +126,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "4",
@@ -140,7 +138,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "5",
@@ -152,7 +150,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "6",
@@ -164,7 +162,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "7",
@@ -176,7 +174,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "8",
@@ -188,7 +186,7 @@ export const foods = [
     category: "Curry",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
 
   // Pizza Products
@@ -202,7 +200,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "10",
@@ -214,7 +212,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "11",
@@ -226,7 +224,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "12",
@@ -238,7 +236,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "13",
@@ -250,7 +248,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "14",
@@ -262,7 +260,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "15",
@@ -274,7 +272,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "16",
@@ -286,7 +284,7 @@ export const foods = [
     category: "Pizza",
     sizes: ["S", "M", "L", "XL"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
 
   // Rice Products
@@ -300,7 +298,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "18",
@@ -312,7 +310,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "19",
@@ -324,7 +322,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "20",
@@ -336,7 +334,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "21",
@@ -348,7 +346,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "22",
@@ -360,7 +358,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "23",
@@ -372,7 +370,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "24",
@@ -384,7 +382,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
 
   // Deserts Products
@@ -398,7 +396,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "26",
@@ -410,7 +408,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "27",
@@ -422,7 +420,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "28",
@@ -434,7 +432,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "29",
@@ -446,7 +444,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "30",
@@ -458,7 +456,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "31",
@@ -470,7 +468,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "32",
@@ -482,7 +480,7 @@ export const foods = [
     category: "Deserts",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   // Drinks Products
   {
@@ -495,7 +493,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "34",
@@ -507,7 +505,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "35",
@@ -519,7 +517,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "36",
@@ -531,7 +529,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: true,
   },
   {
     _id: "37",
@@ -543,7 +541,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "38",
@@ -555,7 +553,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "39",
@@ -567,7 +565,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "40",
@@ -579,7 +577,7 @@ export const foods = [
     category: "Drinks",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
 
   // Fruits Products
@@ -593,7 +591,7 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "42",
@@ -605,7 +603,7 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "43",
@@ -617,7 +615,7 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "44",
@@ -629,7 +627,7 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "45",
@@ -641,7 +639,7 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "46",
@@ -653,7 +651,7 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "47",
@@ -665,7 +663,7 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
   {
     _id: "48",
@@ -677,52 +675,49 @@ export const foods = [
     category: "Fruits",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: false,
   },
 ];
 
+// FOOTER SECTION (but we created with our own data)
 
+// export const FOOTER_LINKS = [
+//   {
+//     title: "Learn More",
+//     links: [
+//       "About Us",
+//       "Fresh Foods",
+//       "Fast Foods",
+//       "Hot Deals",
+//       "Popular Foods",
+//       "FAQ",
+//     ],
+//   },
+//   {
+//     title: "Our Community",
+//     links: [
+//       "Terms and Conditions",
+//       "Special Offers",
+//       "Customer Reviews",
+//     ],
+//   },
+// ];
 
-// FOOTER SECTION
-export const FOOTER_LINKS = [
-  {
-    title: "Learn More",
-    links: [
-      "About Us",
-      "Fresh Foods",
-      "Fast Foods",
-      "Hot Deals",
-      "Popular Foods",
-      "FAQ",
-    ],
-  },
-  {
-    title: "Our Community",
-    links: [
-      "Terms and Conditions",
-      "Special Offers",
-      "Customer Reviews",
-    ],
-  },
-];
+// export const FOOTER_CONTACT_INFO = {
+//   title: "Contact Us",
+//   links: [
+//     { label: "Contact Number", value: "123-456-7890" },
+//     { label: "Email Address", value: "info@foodessa.com" },
+//   ],
+// };
 
-
-export const FOOTER_CONTACT_INFO = {
-  title: "Contact Us",
-  links: [
-    { label: "Contact Number", value: "123-456-7890" },
-    { label: "Email Address", value: "info@foodessa.com" },
-  ],
-};
-
-
-export const SOCIALS = {
-  title: "Social",
-  links: [
-    { icon: <FaFacebook />, id: "facebook" },
-    { icon: <FaInstagram />, id: "instagram" },
-    { icon: <FaTwitter />, id: "twitter" },
-    { icon: <FaYoutube />, id: "youtube" },
-    { icon: <FaLinkedin />, id: "linkedin" },
-  ],
-};
+// export const SOCIALS = {
+//   title: "Social",
+//   links: [
+//     { icon: <FaFacebook />, id: "facebook" },
+//     { icon: <FaInstagram />, id: "instagram" },
+//     { icon: <FaTwitter />, id: "twitter" },
+//     { icon: <FaYoutube />, id: "youtube" },
+//     { icon: <FaLinkedin />, id: "linkedin" },
+//   ],
+// };

@@ -4,7 +4,7 @@ import { TbShoppingBagPlus } from "react-icons/tb";
 import { ShopContext } from "../context/ShopContext";
 
 const Item = ({ food }) => {
-  const { currency } = useContext(ShopContext);
+  const { currency, addToCart } = useContext(ShopContext);
   const [size, setSize] = useState(food.sizes[0]);
 
   return (
@@ -58,7 +58,10 @@ const Item = ({ food }) => {
                   </button>
                 ))}
             </div>
-            <button className="flexCenter gap-x-1 text-[18px] bg-secondary text-white rounded-sm p-[3px]">
+            <button
+              onClick={() => addToCart(food._id, size)}
+              className="flexCenter gap-x-1 text-[18px] bg-secondary text-white rounded-sm p-[3px]"
+            >
               <TbShoppingBagPlus />
             </button>
           </div>
